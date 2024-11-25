@@ -37,7 +37,7 @@ const UserRequest = () => {
 
 
    const baseURL = process.env.NODE_ENV === 'production'
-    ? 'https://demande-2.onrender.com' 
+    ? 'https://demande-3.onrender.com' 
     : 'http://localhost:8000';
 
   axios.defaults.baseURL = baseURL;
@@ -69,7 +69,7 @@ const UserRequest = () => {
 
     // Sending data using Axios
     axios
-      .post('http://localhost:8000/api/submit-form', dataToSend)
+      .post('/api/submit-form', dataToSend)
       .then((response) => {
         if (response.data.success) {
           alert('Data successfully saved!');

@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://demande-2.onrender.com'], 
+  origin: ['http://localhost:5173', 'https://demande-3.onrender.com'], 
   credentials: true,
 }));
 

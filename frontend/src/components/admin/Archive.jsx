@@ -9,7 +9,7 @@ const ArchivePage = () => {
 
 
   const baseURL = process.env.NODE_ENV === 'production'
-  ? 'https://demande-2.onrender.com' 
+  ? 'https://demande-3.onrender.com' 
   : 'http://localhost:8000';
 
 axios.defaults.baseURL = baseURL;
@@ -17,7 +17,7 @@ axios.defaults.withCredentials = true;
 
   // Fetch all requests (both approved and rejected)
   useEffect(() => {
-    axios.get('http://localhost:8000/api/requests') // Ensure this endpoint fetches all requests
+    axios.get('/api/requests') // Ensure this endpoint fetches all requests
       .then(response => {
         const formattedRequests = response.data.map(request => {
           const date = new Date(request.date_demande);

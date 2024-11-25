@@ -24,7 +24,7 @@ const Login = () => {
 
 
   const baseURL = process.env.NODE_ENV === 'production'
-  ? 'https://demande-2.onrender.com' 
+  ? 'https://demande-3.onrender.com' 
   : 'http://localhost:8000';
 
 axios.defaults.baseURL = baseURL;
@@ -53,7 +53,7 @@ axios.defaults.withCredentials = true;
     setErrors(validationErrors);
 
     if (!validationErrors.email && !validationErrors.password) {
-        axios.post('http://localhost:8000/login', values)
+        axios.post('/login', values)
         .then(res => {
           console.log(res);  
       
