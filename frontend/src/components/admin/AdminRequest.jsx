@@ -14,6 +14,15 @@ const AdminRequest = () => {
   const [showCommentInput, setShowCommentInput] = useState({});
   const navigate = useNavigate();
 
+
+
+
+  const baseURL = process.env.NODE_ENV === 'production'
+  ? 'https://demande-2.onrender.com' 
+  : 'http://localhost:8000';
+
+axios.defaults.baseURL = baseURL;
+axios.defaults.withCredentials = true;
   // Fetch requests from backend
   useEffect(() => {
     axios

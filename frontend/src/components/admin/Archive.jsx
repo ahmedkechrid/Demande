@@ -7,6 +7,14 @@ import {Link} from 'react-router-dom'
 const ArchivePage = () => {
   const [requests, setRequests] = useState([]);
 
+
+  const baseURL = process.env.NODE_ENV === 'production'
+  ? 'https://demande-2.onrender.com' 
+  : 'http://localhost:8000';
+
+axios.defaults.baseURL = baseURL;
+axios.defaults.withCredentials = true;
+
   // Fetch all requests (both approved and rejected)
   useEffect(() => {
     axios.get('http://localhost:8000/api/requests') // Ensure this endpoint fetches all requests
