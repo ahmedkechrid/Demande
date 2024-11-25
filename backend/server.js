@@ -20,13 +20,15 @@ app.use(cors({
 
 app.options('*', cors());
 
-dotenv.config();
 
+dotenv.config();
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
+  host: process.env.DB_HOST,   
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
+  port: 3306,  
+  connectTimeout: 10000, 
 });
 
 app.use(bodyParser.json());
