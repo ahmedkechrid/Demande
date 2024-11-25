@@ -20,11 +20,13 @@ app.use(cors({
 
 app.options('*', cors());
 
+dotenv.config();
+
 const db = mysql.createConnection({
-  host: '192.168.114.97',
-  user: 'root',
-  password: 'WkwDatabase',
-  database: 'demande',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 app.use(bodyParser.json());
