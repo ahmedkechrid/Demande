@@ -1,0 +1,73 @@
+/* ArchivePage.css */
+
+.archive-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .archive-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .archive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .archive-table th, .archive-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .archive-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .archive-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .archive-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .archive-table td {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .archive-table td:last-child {
+    text-align: center;
+  }
+  
+  .archive-table td a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .archive-table td a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .archive-page {
+      padding: 10px;
+    }
+  
+    .archive-page h2 {
+      font-size: 1.5rem;
+    }
+  
+    .archive-table th, .archive-table td {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,182 @@
+.admin-request-panel {
+    padding: 20px;
+  }
+  
+  .request-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9; /* Light background for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Ensures corners remain rounded with content */
+  }
+  
+  .request-table th {
+    background-color: #004aad; 
+    color: black; 
+    padding: 12px 15px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+  }
+  
+  .request-table td {
+    padding: 10px 15px; /* Comfortable padding for data cells */
+    border-bottom: 1px solid #ddd; /* Subtle borders between rows */
+  }
+  
+  .request-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row background for clarity */
+  }
+  
+  .request-table tr:hover {
+    background-color: #f5f5f5; /* Highlight row on hover */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .request-table td:first-child, .request-table th:first-child {
+    text-align: center; /* Center-align the first column */
+  }
+  
+  .request-table td:last-child {
+    text-align: center; /* Center-align the actions column */
+  }
+  
+  
+  
+  .request-table td button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .modify-form {
+    margin-top: 20px;
+  }
+  
+  .modify-form input {
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .modify-form button {
+    margin-top: 10px;
+  }
+
+  .aprrove-btn{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .reject-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, white, red);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+  width: 80px;
+  height: 90px;
+  
+}
+
+.header-buttons {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.title-admin{
+  color: rgba(0, 0, 0, 0.603);
+}
+
+
+.logout-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.archive-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.archive-button:hover {
+  background-color: #959393;
+}
+
+
+.logout-button:hover {
+  background-color: #ff0000;
+}
+
+.admin-request-container {
+  padding: 20px;
+}
+
+.request-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.request-table th,
+.request-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.request-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.reject-comment {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}

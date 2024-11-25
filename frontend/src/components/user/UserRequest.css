@@ -1,0 +1,149 @@
+/* General form container */
+.user-request-form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    color: #333;
+  }
+  
+  /* Hover effect for form container */
+  .user-request-form:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  /* Form group container */
+  .form-group {
+    margin-bottom: 22px;
+  }
+  
+  /* Label styles */
+  .form-group label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Input and select fields */
+  .form-input, .form-select {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fafafa;
+    color: #555;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus effect for inputs and selects */
+  .form-input:focus, .form-select:focus {
+    border-color: #4ECDC4;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(78, 205, 196, 0.3);
+  }
+  
+  /* Style for date and time inputs */
+  input[type="time"], input[type="date"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="time"]:focus, input[type="date"]:focus {
+    border-color: #4ECDC4;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(78, 205, 196, 0.3);
+  }
+  
+  /* Submit button styles */
+  .submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4ECDC4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for submit button */
+  .submit-btn:hover {
+    background-color: #39b0a2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Focus effect for the submit button */
+  .submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(78, 205, 196, 0.5);
+  }
+  
+  /* Placeholder text style */
+  ::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+
+  .requests-table {
+    margin-top: 30px;
+  }
+  
+  .requests-table table {
+    width: 100%;
+  }
+  
+  .requests-table th, .requests-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .approved {
+    background-color: lightgreen; 
+  }
+  
+  .modified {
+    background-color: yellow; 
+  }
+  
+  .rejected {
+    background-color: red; 
+  }
+  /* Responsive design for small screens */
+  @media (max-width: 600px) {
+    .user-request-form {
+      padding: 20px;
+      margin: 15px;
+    }
+  
+    .form-input, .form-select, .submit-btn {
+      font-size: 15px;
+      padding: 12px;
+    }
+  
+    .form-group {
+      margin-bottom: 18px;
+    }
+  }
+  

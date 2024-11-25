@@ -1,0 +1,140 @@
+.container-sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .header-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;  
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .text-sign {
+    color: #4c00b4; 
+    font-size: 2rem; 
+    font-weight: bold;
+  }
+
+  .underline-sign {
+    width: 50px; 
+    height: 4px; 
+    background: #4c00b4; 
+    border-radius: 6px;
+  }
+  
+  .inputs-sign {
+    margin-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-sign {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;   
+    height: 60px;
+    background: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .input-sign img {
+    margin: 0 20px; 
+  }
+  
+  .input-sign input {
+    flex: 1; 
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #4c4c4c;
+    font-size: 1rem; 
+  }
+  
+  .forgot-password {
+    padding-left: 62px;
+    margin-top: 27px; 
+    color: #4c00b4; 
+    font-size: 0.9rem; 
+  }
+  
+  .forgot-password span {
+    color: #ff0000; 
+    cursor: pointer;
+  }
+  
+  .submit-container {
+    display: flex;
+  }
+  
+  .submit-sign,
+  .submit-sign-grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 59px;
+    color: #ffffff;
+    font-size: 1rem; 
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .submit-sign {
+    background-color: #4c00b4; 
+  }
+  
+  .submit-sign-grey {
+    background-color: #676767; 
+    }
+  
+  .input-sign span {
+    color: #ff0000; 
+  }
+  
+  #video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .select-sign select {
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    width: 100%; 
+  }
+  
+  .select-sign select:focus {
+    outline: none; 
+    border-color: #4c00b4; 
+  }
+  
+  .select-sign option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .select-sign span {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px; 
+    display: block; 
+  }
+  
+  
